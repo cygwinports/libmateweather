@@ -1,7 +1,0 @@
-inherit mate
-
-
-PKG_NAMES="libmateweather1 libmateweather-common libmateweather-devel"
-libmateweather1_CONTENTS="usr/bin/cygmateweather-1.dll"
-libmateweather_common_CONTENTS="--exclude=gtk-doc etc/ usr/share/"
-libmateweather_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
