@@ -1,18 +1,21 @@
 inherit mate
 
 NAME="libmateweather"
-VERSION=1.6.2
+VERSION=1.8.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MATE weather report library"
 DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
 and attractive desktop to Linux users using traditional metaphors."
 
-PKG_NAMES="libmateweather1 libmateweather-common libmateweather-devel"
+PKG_NAMES="${NAME}1 ${NAME}-common ${NAME}-devel ${NAME}-doc"
 libmateweather1_SUMMARY="${SUMMARY} (runtime)"
 libmateweather1_REQUIRES="libmateweather-common"
 libmateweather1_CONTENTS="usr/bin/cygmateweather-1.dll"
 libmateweather_common_SUMMARY="${SUMMARY} (data)"
 libmateweather_common_CONTENTS="--exclude=gtk-doc etc/ usr/share/"
 libmateweather_devel_SUMMARY="${SUMMARY} (development)"
-libmateweather_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
+libmateweather_devel_CONTENTS="usr/include/ usr/lib/"
+libmateweather_doc_CATEGORY="Doc"
+libmateweather_doc_SUMMARY="${SUMMARY} (API documentation)"
+libmateweather_doc_CONTENTS="usr/share/gtk-doc/"
