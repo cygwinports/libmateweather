@@ -10,7 +10,7 @@ and attractive desktop to Linux users using traditional metaphors."
 
 PKG_NAMES="${NAME}1 ${NAME}-common ${NAME}-devel ${NAME}-doc"
 libmateweather1_SUMMARY="${SUMMARY} (runtime)"
-libmateweather1_REQUIRES="libmateweather-common tzcode"
+libmateweather1_REQUIRES="libmateweather-common tzdata"
 libmateweather1_CONTENTS="usr/bin/cygmateweather-1.dll"
 libmateweather_common_SUMMARY="${SUMMARY} (data)"
 libmateweather_common_CONTENTS="--exclude=gtk-doc etc/ usr/share/"
