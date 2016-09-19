@@ -1,7 +1,7 @@
 inherit mate
 
 NAME="libmateweather"
-VERSION=1.14.0
+VERSION=1.14.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MATE weather report library"
